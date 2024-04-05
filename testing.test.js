@@ -22,6 +22,19 @@ import { reverseString } from "./reverseString";
 
 test("Reverse string function exists", () => {
   expect(reverseString).toBeDefined();
+});
 
-  
+test("abc to cba", () => {
+  expect(reverseString("abc")).toBe("cba");
+});
+
+test("bca to acb", () => {
+  expect(reverseString("bca")).toBe("acb");
+});
+
+test("Empty string works fine", () => {
+  expect(reverseString("")).toBe("");
+});
+test("Works with any string", () => {
+  expect(reverseString("4321")).toBe("1234");
 });
